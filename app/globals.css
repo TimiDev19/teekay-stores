@@ -34,3 +34,10 @@ body {
   background-size: cover;
 }
 
+.about-image {
+  background-image:
+    url('./assets/image1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
