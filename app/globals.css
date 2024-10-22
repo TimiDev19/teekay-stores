@@ -41,3 +41,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.map {
+  background-image:
+    url('./assets/map.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
