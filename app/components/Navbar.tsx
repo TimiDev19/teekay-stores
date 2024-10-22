@@ -9,7 +9,7 @@ import Link from 'next/link';
 const urbanist = Urbanist({
     subsets: ['latin'],
     weight: ['400', '700'],
-  });
+});
 
 const inter = Inter({
     subsets: ['latin'],
@@ -47,11 +47,11 @@ const Navbar = () => {
             {
                 isDropdown && <div className=' bg-black border-b-[#023047] border-b'>
                     <ul >
-                    <a href='/#home'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Home</li></a>
-                    <a href='/about'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>About</li></a>
-                    <a href='/#projects'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Gallery</li></a>
-                    <a href='/#techstack'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Services</li></a>
-                    <a href='/#contact'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Contact Us</li></a>
+                        <a href='/'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Home</li></a>
+                        <a href='/about'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>About</li></a>
+                        <a href='/gallery'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Gallery</li></a>
+                        <a href='/#techstack'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Services</li></a>
+                        <a href='/#contact'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Contact Us</li></a>
                     </ul>
                 </div>
             }
