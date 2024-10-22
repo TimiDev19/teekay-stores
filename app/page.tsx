@@ -58,7 +58,7 @@ export default function Home() {
       <div className=" block w-[90%] m-auto text-center mb-[70px]">
         <h1 className=" text-orange-500 uppercase font-extrabold text-4xl lg:text-6xl mb-4">Our Gallery</h1>
         <p className=" text-black mb-4">Have a nice view of our beautiful bag collection.</p>
-        <div className=" w-full grid grid-cols-3">
+        <div className=" w-full grid grid-cols-1 lg:grid-cols-3">
           {
             displayItems.map((item, index) => (
               <div key={index} className=" mx-2 mb-4 border border-black duration-500 hover:mx-1 cursor-pointer">
