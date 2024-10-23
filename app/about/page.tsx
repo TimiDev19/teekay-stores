@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import image from '@/app/assets/image1.jpg'
+import image from '@/app/assets/newimg1.jpg'
 
 const page = () => {
     return (

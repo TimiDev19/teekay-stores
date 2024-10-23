@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import image from '@/app/assets/image1.jpg'
+import image from '@/app/assets/newimg1.jpg'
 import gallery from '../app/assets/helpers/helpers'
 
 export default function Home() {
@@ -10,8 +10,8 @@ export default function Home() {
     return item.id < 7
   })
   return (
-    <div className=" hero-bg h-screen w-screen  text-white">
-      <div className=" h-screen w-screen flex flex-col pt-[100px] lg:flex-row items-center justify-between px-5 mb-6">
+    <div className="  max-h-screen overflow-y-scroll scroll-smooth w-screen  text-white">
+      <div className=" hero-bg h-screen w-screen flex flex-col pt-[100px] lg:flex-row items-center justify-between px-5 mb-6">
         <div className=" w-full lg:w-[35%] p-4 text-left flex flex-col items-start justify-start h-[85%]">
           <h1 className=" text-white text-3xl lg:text-5xl font-semibold mb-[30px] lg:mb-[70px]">TEEKAY BEADEN <br /> BAG COLLECTION</h1>
 
@@ -71,7 +71,7 @@ export default function Home() {
           }
         </div>
         <Link
-          href={'/about'}
+          href={'/gallery'}
           className=" p-2 text-white bg-black duration-500 hover:border-black hover:border-2 hover:bg-transparent hover:text-black lg:text-2xl"
         >
           See More

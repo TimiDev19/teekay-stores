@@ -33,8 +33,8 @@ const Navbar = () => {
                 <div className=' hidden md:flex items-center'>
                     <a href='/'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Home</li></a>
                     <a href='/about'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>About</li></a>
-                    <a href='/gallery'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Gallery</li></a>
-                    <a href='/#techstack'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Services</li></a>
+                    <a href='/gallery'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Shop</li></a>
+                    {/* <a href='/#techstack'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Services</li></a> */}
                     <a href='/#contact'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Contact Us</li></a>
                 </div>
 
@@ -49,8 +49,8 @@ const Navbar = () => {
                     <ul >
                         <a href='/'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Home</li></a>
                         <a href='/about'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>About</li></a>
-                        <a href='/gallery'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Gallery</li></a>
-                        <a href='/#techstack'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Services</li></a>
+                        <a href='/gallery'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Shop</li></a>
+                        {/* <a href='/#techstack'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Services</li></a> */}
                         <a href='/#contact'><li className=' py-1 mb-1 font-semibold px-4 hover:text-orange-500 text-white text-xl tracking-[0.1em] duration-500 flex items-center font-sans'>Contact Us</li></a>
                     </ul>
                 </div>
