@@ -3,7 +3,7 @@ import Link from "next/link";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import image from '@/app/assets/newimg1.jpg'
-import gallery from '../app/assets/helpers/helpers'
+import gallery from '@/app/helpers/helpers'
 
 export default function Home() {
   const displayItems = gallery.filter((item) => {
