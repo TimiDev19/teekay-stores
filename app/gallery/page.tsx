@@ -2,18 +2,22 @@ import React from 'react'
 import gallery from '@/app/helpers/helpers'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FadeInFromBottom } from '../components/FadeInFromBottom'
+import { FadeInFromTop } from '../components/FadeInFromTop'
 
 const page = () => {
     return (
         <div className=' pt-[100px] max-h-[100vh] overscroll-y-scroll scroll-smooth'>
             <div className=" block w-[90%] m-auto text-center mb-[70px]">
-                <h1 className=" text-orange-500 uppercase font-extrabold text-4xl lg:text-6xl mb-4">Our Gallery</h1>
-                <p className=" text-black mb-4">Have a nice view of our beautiful bag collection.</p>
+                <FadeInFromTop>
+                    <h1 className=" text-orange-500 uppercase font-extrabold text-4xl lg:text-6xl mb-4">Our Gallery</h1>
+                    <p className=" text-black mb-4">Have a nice view of our beautiful bag collection.</p>
+                </FadeInFromTop>
                 <div className=" grid md:grid-cols-2 lg:grid-cols-3 w-full pxpx mx2xl">
                     {gallery.map((item, index) => (
                         <div
                             key={index}
-                            className=" group flex flex-col items-center justify-between w-[95%] cursor-pointer m-auto min-h-[400px] border border-slate-300 mb-6"
+                            className=" group hover:border-4 hover:border-black duration-500 flex flex-col items-center justify-between w-[95%] cursor-pointer m-auto min-h-[400px] border border-slate-300 mb-6"
                         >
                             <div className=' group text-center'>
                                 <Image
