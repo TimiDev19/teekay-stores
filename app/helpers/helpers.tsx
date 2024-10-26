@@ -25,6 +25,7 @@ import img24 from '@/app/assets/newimg24.jpg'
 import img25 from '@/app/assets/newimg25.jpg'
 import img26 from '@/app/assets/newimg26.jpg'
 import img27 from '@/app/assets/newimg27.jpg'
+
 const gallery = [
     {
         id: 1,

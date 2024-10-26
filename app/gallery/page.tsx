@@ -9,18 +9,6 @@ const page = () => {
             <div className=" block w-[90%] m-auto text-center mb-[70px]">
                 <h1 className=" text-orange-500 uppercase font-extrabold text-4xl lg:text-6xl mb-4">Our Gallery</h1>
                 <p className=" text-black mb-4">Have a nice view of our beautiful bag collection.</p>
-                {/* <div className=" w-full grid md:grid-cols-2 lg:grid-cols-4 pxpx mx2xl">
-                    {
-                        gallery.map((item, index) => (
-                            <div key={index} className=" mx-2 mb-4 h-fit border border-black duration-500 hover:mx-1 cursor-pointer">
-                                <Image
-                                    src={item.image}
-                                    alt=""
-                                />
-                            </div>
-                        ))
-                    }
-                </div> */}
                 <div className=" grid md:grid-cols-2 lg:grid-cols-3 w-full pxpx mx2xl">
                     {gallery.map((item, index) => (
                         <div
