@@ -23,6 +23,7 @@ const ProductCard = ({ width = '400px', img }: any) => {
           src={img}
           width={1000}
           height={1000}
+          placeholder='blur'
           style={{
             transform: isHovered ? 'scale(1.1)' : 'scale(1)',
             transition: 'transform 400ms ease',
