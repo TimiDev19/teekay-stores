@@ -3,7 +3,7 @@ import aboutimg from '@/assets/newimg15.jpg';
 
 const About = () => {
   return (
-    <section className="pxpx mx2xl py-20 bg-[#fffaf6] relative">
+    <section id='about' className="pxpx mx2xl py-20 bg-[#fffaf6] relative">
       <p className=" text-center text-2xl tracking-widest mb-20 tangerine">
         TEEKAY
       </p>

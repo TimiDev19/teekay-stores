@@ -8,9 +8,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import useMedia from '@/hooks/useMedia';
 
-import ProductCard from '@/helpers/ProductCard';
+import ProductCard from '@/components/helpers/ProductCard';
 import Image from 'next/image';
-import { products } from '@/helpers/helpers';
+import { products } from '@/components/helpers/helpers';
 import Link from 'next/link';
 
 const Products = () => {
@@ -19,19 +19,19 @@ const Products = () => {
   const viewPortSlides = isMobile ? 1 : isTablet ? 2 : 3;
   const slidesPerView = Math.min(viewPortSlides, products.length);
   return (
-    <section className="pxpx mx2xl py-20">
+    <section id="products" className="pxpx mx2xl py-20">
       <p className=" text-center text-2xl tracking-widest mb-16 leading-[0.8] tangerine">
         OUR PRODUCTS <br />
         <span className="text-[10px] tracking-[0.3em] slab">(SWIPE)</span>
       </p>
-      <div className="mb-16 cursor-grab">
+      <div className="mb-16 relative">
         <Swiper
           slidesPerView={slidesPerView}
           modules={[A11y, Navigation]}
-          // navigation={{
-          //   prevEl: '.swiper-button-prev',
-          //   nextEl: '.swiper-button-next',
-          // }}
+          navigation={{
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+          }}
           speed={700}
           spaceBetween={30}
           className="flex"
@@ -42,20 +42,18 @@ const Products = () => {
             </SwiperSlide>
           ))}
           {/* <div>
-                <ArrowCircleLeft
-                  weight="fill"
-                  className="swiper-button-prev abolute top-1/2 z-20 translate-x-4 -translate-y-1/2  cursor-pointer shadow-2xl"
-                />
-                <ArrowCircleRight
-                  weight="fill"
-                  className="swiper-button-next absolute top-1/2 z-20 -translate-x-4 -translate-y-1/2 cursor-pointer shadow-2xl"
-                />
-              </div> */}
+            <p className="swiper-button-prev abolute top-1/2 z-20 translate-x-4 -translate-y-1/2  cursor-pointer shadow-2xl">
+              PREV
+            </p>
+            <p className="swiper-button-next absolute top-1/2 z-20 -translate-x-4 -translate-y-1/2 cursor-pointer shadow-2xl">
+              NEXT
+            </p>
+          </div> */}
         </Swiper>
       </div>
 
       <Link
-        href={''}
+        href={'/shop'}
         className="mx-auto w-full bg-red-400 text-center text-2xl tracking-widest leading-[0.8]"
       >
         <p className="hover:underline tangerine "> VIEW ALL PRODUCTS</p>

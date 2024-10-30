@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Squeeze as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
+import { smoothScrollToSection } from './helpers/helpers';
 
 // import Menu from './Menu';
 
@@ -63,15 +64,24 @@ const NavBar = () => {
         </Link>
 
         <div className="lg:flex items-center gap-8 tracking-[0.15rem] hidden uppercase font-bold">
-          <div className="relative cursor-pointer group">
+          <div
+            onClick={(e) => smoothScrollToSection(e, 'about')}
+            className="relative cursor-pointer group"
+          >
             <p>About</p>
             <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
           </div>
-          <div className="relative cursor-pointer group">
+          <div
+            onClick={(e) => smoothScrollToSection(e, 'products')}
+            className="relative cursor-pointer group"
+          >
             <p>Bags</p>
             <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
           </div>
-          <div className="relative cursor-pointer group">
+          <div
+            onClick={(e) => smoothScrollToSection(e, 'contact')}
+            className="relative cursor-pointer group"
+          >
             <p> Contact Us</p>
             <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
           </div>

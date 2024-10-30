@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div
+    <section
       id="contact"
       className=" lg:h-[90vh] flex flex-col lg:flex-row items-center justify-center pt-20"
     >
@@ -62,7 +62,7 @@ const Contact = () => {
         </div>
       </div>
       <div className=" h-full w-full lg:w-[50%] map"></div>
-    </div>
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="h-screen relative bg-black">
+    <section id="hero" className="h-screen relative bg-black">
       <video
         src="/hero.mp4"
         className="absolute inset-0 object-cover w-full h-full opacity-50"
