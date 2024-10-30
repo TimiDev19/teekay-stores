@@ -8,8 +8,8 @@ const About = () => {
         TEEKAY
       </p>
       <div>
-        <div className="flex w-[70%] mx-auto gap-28">
-          <div className=" w-[65%] flex flex-col gap-4 z-[2]">
+        <div className="flex flex-col lg:flex-row w-[70%] mx-auto gap-28">
+          <div className=" lg:w-[65%] flex flex-col gap-4 z-[2]">
             <p className=" uppercase text-xs italic">
               Our Story of Timeless Elegance
             </p>
@@ -36,7 +36,7 @@ const About = () => {
             src={aboutimg}
             width={1000}
             height={1000}
-            className="w-[400px] h-[500px] originleft scale-0.9] object-cover z-[1] grayscale rotate45 -translat-x-[150px]"
+            className=" w-full lg:w-[400px] lg:h-[500px] originleft scale-0.9] object-cover z-[1] grayscale rotate45 -translat-x-[150px]"
             alt=""
           />
         </div>
