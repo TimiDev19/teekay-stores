@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import useMedia from '@/hooks/useMedia';
 
 import ProductCard from '@/components/helpers/ProductCard';
-import Image from 'next/image';
+
 import { products } from '@/components/helpers/helpers';
 import Link from 'next/link';
 
@@ -38,7 +38,7 @@ const Products = () => {
         >
           {products.map((product, i) => (
             <SwiperSlide key={i}>
-              <ProductCard imge={product.image} width="100%" />
+              <ProductCard imge={product.image} id={product.id} width="100%" />
             </SwiperSlide>
           ))}
           {/* <div>

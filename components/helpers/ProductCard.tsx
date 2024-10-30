@@ -16,11 +16,10 @@ type Product = {
   description?: string;
 };
 
-
 const ProductCard = ({ width = '400px', imge, id }: any) => {
   // const { id } = useParams<{ id: string }>();
   const [isHovered, setIsHovered] = useState(false);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
@@ -34,10 +33,9 @@ const ProductCard = ({ width = '400px', imge, id }: any) => {
     }
   }, [id]);
 
-
-
   const handleAddToCart = () => {
-    if (product) { // Check if product is not null
+    if (product) {
+      // Check if product is not null
       const CartItem = {
         id: product.id,
         img: product.image,
@@ -50,7 +48,7 @@ const ProductCard = ({ width = '400px', imge, id }: any) => {
       dispatch(addToCart(CartItem));
     } else {
       // Handle the case where product is null, if necessary
-      console.error("Product is null");
+      console.error('Product is null');
     }
   };
 
@@ -61,7 +59,10 @@ const ProductCard = ({ width = '400px', imge, id }: any) => {
         style={{ width, height: '500px', overflow: 'hidden' }}
         className="relative"
       >
-        <div onClick={handleAddToCart} className="absolute bottom-0 translate-y-20 transform bg-white w-full px-4 py-4 z-[2] flex justify-between group-hover:translate-y-0 duration-500 ease-in-out opacity-0 group-hover:opacity-100 cursor-pointer">
+        <div
+          onClick={handleAddToCart}
+          className="absolute bottom-0 translate-y-20 transform bg-white w-full px-4 py-4 z-[2] flex justify-between group-hover:translate-y-0 duration-500 ease-in-out opacity-0 group-hover:opacity-100 cursor-pointer"
+        >
           <p>Add To Cart +</p>
           <ShoppingCartOutlined />
         </div>
@@ -69,7 +70,7 @@ const ProductCard = ({ width = '400px', imge, id }: any) => {
           src={imge}
           width={1000}
           height={1000}
-          placeholder='blur'
+          // placeholder="blur"
           style={{
             transform: isHovered ? 'scale(1.1)' : 'scale(1)',
             transition: 'transform 400ms ease',

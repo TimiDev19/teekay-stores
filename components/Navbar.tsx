@@ -106,21 +106,32 @@ const NavBar = () => {
             onClick={toogleCartHandler}
             className="relative inline-flex items-center space-x-2 cursor-pointer"
           >
-            <Image src={cartimg} alt="cart-svg" className="h-6 w-6 text-white" />
-            <div className="absolute top-0 right-0 translate-y-[-0.4rem] translate-x-[0.4rem] bg-blue-500 text-white text-xs px-1 py-[2px] font-semibold rounded-full">
+            <Image
+              src={cartimg}
+              alt="cart-svg"
+              className="h-6 w-6 text-white invert"
+            />
+            <div className="absolute top-0 right-0 translate-y-[-0.4rem] translate-x-[0.4rem] bg-[#ffc675] text-black text-xs pl-1.5 pr-1 pt-[2px] pb-[1.5px] font-semibold rounded-full">
               {totalItems}
             </div>
           </div>
         </div>
 
-        <button onClick={toggleMenu} className="translate-x-[0.5rem] lg:hidden flex items-center justify-center">
+        <button
+          onClick={toggleMenu}
+          className="translate-x-[0.5rem] lg:hidden flex items-center justify-center"
+        >
           <Hamburger toggled={menuIsOpen} size={22} />
           <div
             onClick={toogleCartHandler}
             className="relative inline-flex items-center space-x-2 cursor-pointer"
           >
-            <Image src={cartimg} alt="cart-svg" className="h-6 w-6 text-white" />
-            <div className="absolute top-0 right-0 translate-y-[-0.4rem] translate-x-[0.4rem] bg-blue-500 text-white text-xs px-1 py-[2px] font-semibold rounded-full">
+            <Image
+              src={cartimg}
+              alt="cart-svg"
+              className="h-6 w-6 text-white invert"
+            />
+            <div className="absolute top-0 right-0 translate-y-[-0.4rem] translate-x-[0.4rem] bg-[#ffc675] text-black text-xs pl-1.5 pr-1 pt-[2px] pb-[1.5px] font-semibold rounded-full">
               {totalItems}
             </div>
           </div>
