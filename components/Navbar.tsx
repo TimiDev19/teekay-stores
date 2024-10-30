@@ -53,14 +53,12 @@ const NavBar = () => {
         )}
       </AnimatePresence> */}
       <header
-        className={`fixed top-0 w-full z-40 flex justify-between items-center text-white pxpx text-[13px] duration-300 ${
-          fixedBg
-            ? 'bg-black/50 backdrop-blur-lg webkit-header-blur py-3'
-            : 'py-7'
-        }`}
+        className={`fixed top-0 w-full z-40 flex justify-between items-center text-white pxpx text-[13px] duration-300 bg-black/50 backdrop-blur-lg webkit-header-blur py-3`}
       >
         <Link href={'/'}>
-          <div className="text-3xl tracking-widest tangerine">TEEKAY</div>
+          <div className="text-3xl tracking-widest tangerine invert-0">
+            TEEKAY
+          </div>
         </Link>
 
         <div className="lg:flex items-center gap-8 tracking-[0.15rem] hidden uppercase font-bold">
