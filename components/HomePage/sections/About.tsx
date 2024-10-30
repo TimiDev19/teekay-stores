@@ -3,7 +3,7 @@ import aboutimg from '@/assets/newimg15.jpg';
 
 const About = () => {
   return (
-    <section id='about' className="pxpx mx2xl py-20 bg-[#fffaf6] relative">
+    <section id="about" className="pxpx mx2xl py-20 bg-[#fffaf6] relative">
       <p className=" text-center text-2xl tracking-widest mb-20 tangerine">
         TEEKAY
       </p>
@@ -34,6 +34,7 @@ const About = () => {
           </div>
           <Image
             src={aboutimg}
+            placeholder="blur"
             width={1000}
             height={1000}
             className=" w-full lg:w-[400px] lg:h-[500px] originleft scale-0.9] object-cover z-[1] grayscale rotate45 -translat-x-[150px]"

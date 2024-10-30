@@ -54,9 +54,9 @@ const Products = () => {
 
       <Link
         href={'/bags'}
-        className="mx-auto w-full bg-red-400 text-center text-2xl tracking-widest leading-[0.8]"
+        className="mx-auto w-full text-center text-2xl tracking-widest leading-[0.8]"
       >
-        <p className="hover:underline tangerine "> VIEW ALL PRODUCTS</p>
+        <p className="hover:underline tangerine "> VIEW ALL BAGS</p>
       </Link>
     </section>
   );
