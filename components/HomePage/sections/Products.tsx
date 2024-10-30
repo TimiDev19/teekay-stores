@@ -38,7 +38,7 @@ const Products = () => {
         >
           {products.map((product, i) => (
             <SwiperSlide key={i}>
-              <ProductCard img={product.image} width="100%" />
+              <ProductCard imge={product.image} width="100%" />
             </SwiperSlide>
           ))}
           {/* <div>
