@@ -68,7 +68,7 @@ const NavBar = () => {
             <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
           </div>
           <div className="relative cursor-pointer group">
-            <p>Products</p>
+            <p>Bags</p>
             <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
           </div>
           <div className="relative cursor-pointer group">
