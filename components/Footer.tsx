@@ -91,7 +91,7 @@ const Footer = () => {
                         <div
                             className=' w-full flex items-center justify-center border-b border-b-black'
                         >
-                            <input type="email" placeholder='YOUR EMAIL ADDRESS*' className=' bg-transparent text-black placeholder:text-black placeholder:text-sm py-2 w-full focus:outline-none' />
+                            <input type="email" placeholder='YOUR EMAIL ADDRESS *' className=' bg-transparent text-black placeholder:text-black placeholder:text-sm py-2 w-full focus:outline-none' />
                             <button><ArrowForward /></button>
                         </div>
                     </div>
@@ -99,7 +99,26 @@ const Footer = () => {
             </div>
 
             <div className=' w-full h-[70px] text-center bg-black text-[#fffaf6] flex items-center justify-center'>
-                <h1>Copyright© All rights reserved. Developed by TIMI in partnership with NIKO</h1>
+                <h1 className=' flex'>
+                    Copyright©2024 All rights reserved. Developed by
+                    <Link
+                        target='blank'
+                        href={"https://oluwatimilehin-eportfolio.vercel.app/"}
+                        className="relative cursor-pointer group w-fit mx-2"
+                    >
+                        <p>TIMI</p>
+                        <div className="absolute bottom-0 h-px w-full bg-[#fffaf6] scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+                    </Link>
+                    in partnership with
+                    <Link
+                        target='blank'
+                        href={"https://emmanuelayeniko.netlify.app/"}
+                        className="relative cursor-pointer group w-fit mx-2"
+                    >
+                        <p>NIKO</p>
+                        <div className="absolute bottom-0 h-px w-full bg-[#fffaf6] scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+                    </Link>
+                </h1>
             </div>
         </>
     )
