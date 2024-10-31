@@ -14,7 +14,6 @@ import {
 } from '@/store/audophileSlice';
 import Cart from './cart/Cart';
 import cartimg from '@/assets/cart.svg';
-
 // import Menu from './Menu';
 
 const NavBar = () => {

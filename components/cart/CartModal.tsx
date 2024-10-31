@@ -10,6 +10,7 @@ import { useState } from 'react';
 // import { toast } from 'react-hot-toast';
 
 const CartModal = () => {
+  // const notify = () => toast("Hello, this is a toast!");
   const dispatch = useAppDispatch();
   const [isOrdering, setIsOrdering] = useState(false)
   const cart = useAppSelector((state) => state.appState.cart);
