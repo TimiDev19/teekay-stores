@@ -7,6 +7,8 @@ import { Urbanist, Tangerine, Josefin_Slab } from 'next/font/google';
 import { Provider } from 'react-redux';
 import { store } from '@/store/store';
 import Footer from '@/components/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -55,6 +57,17 @@ export default function RootLayout({
         >
           <Provider store={store}>
             <Navbar />
+            <ToastContainer
+              position="top-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />
             {children}
             <Footer />
           </Provider>

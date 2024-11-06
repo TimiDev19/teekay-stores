@@ -1,6 +1,7 @@
+import React from 'react';
 import { AudiofileState, CartItem } from "@/interface/Interface";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
+import { toast } from 'react-toastify';
 const initialState: AudiofileState = {
   customerName: "",
   mobileMenu: false,
@@ -43,8 +44,10 @@ const audiofileSlice = createSlice({
           price: newItem.price,
           quantity: newItem.quantity,
         });
+        toast.success('Item added succesfully!');
       } else {
-        return alert("item is in cart");
+        // return alert("item is in cart");
+        toast.error('Item is already in cart!');
       }
     },
     updateCart: (

@@ -1,16 +1,15 @@
 'use client';
-// import emailjs from '@emailjs/browser';
-// emailjs.init('vniYYZ7cQTr3doimy');
+import emailjs from '@emailjs/browser';
+emailjs.init('vniYYZ7cQTr3doimy');
 import CartItem from './CartItem';
 import { useAppSelector, useAppDispatch } from '@/store/hooks/hooks';
 import {
   emptyCart,
 } from '@/store/audophileSlice';
 import { useState } from 'react';
-// import { toast } from 'react-hot-toast';
+import { toast } from 'react-toastify';
 
 const CartModal = () => {
-  // const notify = () => toast("Hello, this is a toast!");
   const dispatch = useAppDispatch();
   const [isOrdering, setIsOrdering] = useState(false)
   const cart = useAppSelector((state) => state.appState.cart);
@@ -24,24 +23,13 @@ const CartModal = () => {
 
   const sendCartContent = async () => {
     if (cart.length === 0) {
-      // toast('Your cart is empty. Please add items before placing an order.', {
-      //   duration: 4000, // Duration in milliseconds
-      //   position: 'top-center', // Position of the toast
-      //   style: {
-      //     background: 'red', // Green background
-      //     color: '#fff', // White text
-      //     padding: '16px', // Padding
-      //     borderRadius: '8px', // Rounded corners
-      //     fontSize: '16px', // Font size
-      //     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Shadow effect
-      //   },
-      // });
+      toast.error('Your cart is empty. Please add items before placing an order.')
       setIsOrdering(false)
       return;
     }
 
-    const serviceID = "service_xpo4uhb";
-    const templateID = "template_fxk86xg";
+    const serviceID = "service_yyi23yj";
+    const templateID = "template_bh1ydr5";
     const userID = "vniYYZ7cQTr3doimy";
 
     const filteredCart = cart.map(item => ({
@@ -57,57 +45,24 @@ const CartModal = () => {
     setIsOrdering(true)
     console.log("Email Params:", emailParams);
 
-    // try {
-    //   const res = await emailjs.send(serviceID, templateID, emailParams, userID);
-    //   if (res.status === 200) {
-    //     console.log("Email sent successfully!");
-    //     setOrder("Order placed successfully !")
-    //     toast('Order placed successfully !', {
-    //       duration: 4000, // Duration in milliseconds
-    //       position: 'top-center', // Position of the toast
-    //       style: {
-    //         background: '#4CAF50', // Green background
-    //         color: '#fff', // White text
-    //         padding: '16px', // Padding
-    //         borderRadius: '8px', // Rounded corners
-    //         fontSize: '16px', // Font size
-    //         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Shadow effect
-    //       },
-    //     });
-    //     setIsOrdering(false)
-    //   }
-    // } catch (error) {
-    //   console.error("Failed to send email:", error);
-    //   toast('Failed to send email. Please try again.', {
-    //     duration: 4000, // Duration in milliseconds
-    //     position: 'top-center', // Position of the toast
-    //     style: {
-    //       background: 'red', // Green background
-    //       color: '#fff', // White text
-    //       padding: '16px', // Padding
-    //       borderRadius: '8px', // Rounded corners
-    //       fontSize: '16px', // Font size
-    //       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Shadow effect
-    //     },
-    //   });
-    //   setIsOrdering(false)
-    // }
+    try {
+      const res = await emailjs.send(serviceID, templateID, emailParams, userID);
+      if (res.status === 200) {
+        console.log("Email sent successfully!");
+        setOrder("Order placed successfully !")
+        toast.success('Order placed sucessfully!');
+        setIsOrdering(false)
+      }
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      toast.error('Failed to send email. Please try again');
+      setIsOrdering(false)
+    }
   };
 
   const handleCheckout = () => {
     if (!userEmail) {
-      // toast('Please enter your email address', {
-      //   duration: 4000, // Duration in milliseconds
-      //   position: 'top-center', // Position of the toast
-      //   style: {
-      //     background: 'red', // Green background
-      //     color: '#fff', // White text
-      //     padding: '16px', // Padding
-      //     borderRadius: '8px', // Rounded corners
-      //     fontSize: '16px', // Font size
-      //     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Shadow effect
-      //   },
-      // });
+      toast.error('Please enter your email address.')
     } else {
       sendCartContent();
       setError(null);
