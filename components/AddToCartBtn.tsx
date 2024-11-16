@@ -2,10 +2,11 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import { addToCart } from '@/store/audophileSlice';
+import { StaticImageData } from 'next/image';
 
 interface Bag {
     id: number; // or number, depending on your ID type
-    image: string;
+    image: string | StaticImageData;
     name: string;
     price: number; // or string, depending on how you handle prices
 }
