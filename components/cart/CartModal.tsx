@@ -8,6 +8,8 @@ import {
 } from '@/store/audophileSlice';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
+import { loadStripe } from '@stripe/stripe-js'
+import products from '../helpers/helpers';
 
 const CartModal = () => {
   const dispatch = useAppDispatch();
@@ -20,6 +22,9 @@ const CartModal = () => {
   const totalCost = totalCostArr.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
   }, 0);
+  console.log(cart)
+
+  const apiURL = "http://localhost:3001/api"
 
   const sendCartContent = async () => {
     if (cart.length === 0) {
@@ -68,6 +73,108 @@ const CartModal = () => {
       setError(null);
     }
   };
+
+  // const makePayment = async () => {
+  //   const stripe = await loadStripe("pk_test_51QI9tIP7aD4dwEkIyXhFqlhMcoEhrPnz105IFO5g1hF7n2Ft0usUDuOzCU1KHIPfbnjQ2jO2mmloKfY2JO3FY7nk00BsvXJRCg")
+  //   const body = {
+  //     products: cart
+  //   }
+
+  //   const headers = {
+  //     "Content-Type": "application/json"
+  //   }
+
+  //   const response = await fetch(`${apiURL}/create-checkout-session`, {
+  //     method: "POST",
+  //     headers: headers,
+  //     body: JSON.stringify(body)
+  //   })
+
+  //   const session = await response.json();
+
+  //   const result = stripe?.redirectToCheckout({
+  //     sessionId: session.id
+  //   })
+  // }
+
+//   const makePayment = async () => {
+//     const stripe = await loadStripe("pk_test_51QI9tIP7aD4dwEkIyXhFqlhMcoEhrPnz105IFO5g1hF7n2Ft0usUDuOzCU1KHIPfbnjQ2jO2mmloKfY2JO3FY7nk00BsvXJRCg");
+//     const body = {
+//         products: cart
+//     };
+
+//     const headers = {
+//         "Content-Type": "application/json"
+//     };
+
+//     try {
+//         const response = await fetch(`${apiURL}/create-checkout-session`, {
+//             method: "POST",
+//             headers: headers,
+//             body: JSON.stringify(body)
+//         });
+
+//         // Check if the response is OK (status code 200-299)
+//         if (!response.ok) {
+//             const errorText = await response.text(); // Get the response text for debugging
+//             throw new Error(`HTTP error! status: ${response.status}, response: ${errorText}`);
+//         }
+
+//         const session = await response.json();
+
+//         const result = await stripe?.redirectToCheckout({
+//             sessionId: session.id
+//         });
+        
+//         // Handle the result of the redirect
+//         if (result?.error) {
+//             console.error(result.error.message);
+//         }
+//     } catch (error) {
+//         console.error('Error:', error);
+//     }
+// };
+
+
+const makePayment = async () => {
+  const stripe = await loadStripe("pk_test_51QI9tIP7aD4dwEkIyXhFqlhMcoEhrPnz105IFO5g1hF7n2Ft0usUDuOzCU1KHIPfbnjQ2jO2mmloKfY2JO3FY7nk00BsvXJRCg");
+  const body = {
+      products: cart
+  };
+
+  const headers = {
+      "Content-Type": "application/json"
+  };
+
+  try {
+      const response = await fetch(`${apiURL}/create-checkout-session`, {
+          method: "POST",
+          headers: headers,
+          body: JSON.stringify(body)
+      });
+
+      const textResponse = await response.text(); // Get the response as text
+      console.log("Raw Response:", textResponse); // Log the raw response
+
+      // Check if the response is OK (status code 200-299)
+      if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}, response: ${textResponse}`);
+      }
+
+      const session = JSON.parse(textResponse); // Parse the JSON response
+
+      const result = await stripe?.redirectToCheckout({
+          sessionId: session.id
+      });
+
+      // Handle the result of the redirect
+      if (result?.error) {
+          console.error(result.error.message);
+      }
+  } catch (error) {
+      console.error('Error:', error);
+  }
+};
 
   return (
     <div className="bg-white px-[2rem] py-[2rem] rounded-xl flex flex-col gap-[0.5rem]">
@@ -126,7 +233,7 @@ const CartModal = () => {
           :
           (
             <button
-              onClick={handleCheckout}
+              onClick={makePayment}
               className={`bg-black ${!userEmail && `opacity-65`} md:hover:bg-slate-700 w-full text-white text-[0.85rem] duration-150 py-[1rem] px-[2.3rem] font-semibold tracking-wider md:tracking-widest mt-[1rem] md:mt-[1.5rem] uppercase`}
             >
               Checkout

@@ -38,8 +38,9 @@ const Products = () => {
         >
           {products.map((product, i) => (
             <SwiperSlide key={i}>
-              <ProductCard imge={product.image} id={product.id} width="100%" />
+              <ProductCard imge={product.image} id={product.id} name={product.name} price={product.price} width="100%" />
             </SwiperSlide>
+            // {console.log(product.name)}
           ))}
           {/* <div>
             <p className="swiper-button-prev abolute top-1/2 z-20 translate-x-4 -translate-y-1/2  cursor-pointer shadow-2xl">

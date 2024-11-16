@@ -1,12 +1,14 @@
 'use client';
-
 import { ShoppingCartOutlined } from '@mui/icons-material';
+import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import products from './helpers';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '@/store/audophileSlice';
+import { useRouter } from 'next/router';
+
 
 type Product = {
   id: number;
@@ -16,7 +18,8 @@ type Product = {
   description?: string;
 };
 
-const ProductCard = ({ width = '400px', imge, id }: any) => {
+const ProductCard = ({ width = '400px', imge, id, name, price }: any) => {
+  console.log('name is ' + name)
   // const { id } = useParams<{ id: string }>();
   const [isHovered, setIsHovered] = useState(false);
   const dispatch = useDispatch();
@@ -59,13 +62,15 @@ const ProductCard = ({ width = '400px', imge, id }: any) => {
         style={{ width, height: '500px', overflow: 'hidden' }}
         className="relative"
       >
-        <div
-          onClick={handleAddToCart}
+        <Link
+          // onClick={handleAddToCart}
+          href={`/${id}`}
           className="absolute bottom-0 translate-y-20 transform bg-white w-full px-4 py-4 z-[2] flex justify-between group-hover:translate-y-0 duration-500 ease-in-out opacity-0 group-hover:opacity-100 cursor-pointer"
         >
-          <p>Add To Cart +</p>
-          <ShoppingCartOutlined />
-        </div>
+          <p>View product</p>
+          {/* <ShoppingCartOutlined /> */}
+          <RemoveRedEyeOutlinedIcon />
+        </Link>
         <Image
           src={imge}
           width={1000}
@@ -86,8 +91,8 @@ const ProductCard = ({ width = '400px', imge, id }: any) => {
         />
       </div>
       <div className="flex justify-between font-medium">
-        <p>Larisa Cocktail Bag</p>
-        <p>$39</p>
+        <p>{product?.name}</p>
+        <p>${product?.price}</p>
       </div>
     </div>
   );

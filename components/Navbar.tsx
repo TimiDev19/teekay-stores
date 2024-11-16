@@ -14,6 +14,7 @@ import {
 } from '@/store/audophileSlice';
 import Cart from './cart/Cart';
 import cartimg from '@/assets/cart.svg';
+import { div } from 'framer-motion/client';
 // import Menu from './Menu';
 
 const NavBar = () => {
@@ -70,71 +71,100 @@ const NavBar = () => {
         )}
       </AnimatePresence> */}
       <header
-        className={`fixed top-0 w-full z-40 flex justify-between items-center text-white pxpx text-[13px] duration-300 bg-black/50 backdrop-blur-lg webkit-header-blur py-3`}
+        className={`fixed top-0 w-full z-40 flex flex-col justify-between items-center text-white pxpx text-[13px] duration-300 bg-black/50 backdrop-blur-lg webkit-header-blur py-3`}
       >
-        <Link href={'/'}>
-          <div className="text-3xl tracking-widest tangerine invert-0">
-            TEEKAY
-          </div>
-        </Link>
+        <div className=' w-full flex items-center justify-between'>
+          <Link href={'/'}>
+            <div className="text-3xl tracking-widest tangerine invert-0">
+              TEEKAY
+            </div>
+          </Link>
 
-        <div className="lg:flex items-center gap-8 tracking-[0.15rem] hidden uppercase font-bold">
-          <div
-            onClick={(e) => smoothScrollToSection(e, 'about')}
-            className="relative cursor-pointer group"
-          >
-            <p>About</p>
-            <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
-          </div>
-          <div
-            onClick={(e) => smoothScrollToSection(e, 'products')}
-            className="relative cursor-pointer group"
-          >
-            <p>Bags</p>
-            <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
-          </div>
-          <div
-            onClick={(e) => smoothScrollToSection(e, 'contact')}
-            className="relative cursor-pointer group"
-          >
-            <p> Contact Us</p>
-            <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
-          </div>
+          <div className="lg:flex items-center gap-8 tracking-[0.15rem] hidden uppercase font-bold">
+            <div
+              onClick={(e) => smoothScrollToSection(e, 'about')}
+              className="relative cursor-pointer group"
+            >
+              <p>About</p>
+              <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+            </div>
+            <div
+              onClick={(e) => smoothScrollToSection(e, 'products')}
+              className="relative cursor-pointer group"
+            >
+              <p>Bags</p>
+              <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+            </div>
+            <div
+              onClick={(e) => smoothScrollToSection(e, 'contact')}
+              className="relative cursor-pointer group"
+            >
+              <p> Contact Us</p>
+              <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+            </div>
 
-          <div
-            onClick={toogleCartHandler}
-            className="relative inline-flex items-center space-x-2 cursor-pointer"
-          >
-            <Image
-              src={cartimg}
-              alt="cart-svg"
-              className="h-6 w-6 text-white invert"
-            />
-            <div className="absolute top-0 right-0 translate-y-[-0.4rem] translate-x-[0.4rem] bg-[#ffc675] text-black text-xs pl-1.5 pr-1 pt-[2px] pb-[1.5px] font-semibold rounded-full">
-              {totalItems}
+            <div
+              onClick={toogleCartHandler}
+              className="relative inline-flex items-center space-x-2 cursor-pointer"
+            >
+              <Image
+                src={cartimg}
+                alt="cart-svg"
+                className="h-6 w-6 text-white invert"
+              />
+              <div className="absolute top-0 right-0 translate-y-[-0.4rem] translate-x-[0.4rem] bg-[#ffc675] text-black text-xs pl-1.5 pr-1 pt-[2px] pb-[1.5px] font-semibold rounded-full">
+                {totalItems}
+              </div>
             </div>
           </div>
+
+          <button
+            onClick={toggleMenu}
+            className="translate-x-[0.5rem] lg:hidden flex items-center justify-center"
+          >
+            <Hamburger toggled={menuIsOpen} size={22} />
+            <div
+              onClick={toogleCartHandler}
+              className="relative inline-flex items-center space-x-2 cursor-pointer"
+            >
+              <Image
+                src={cartimg}
+                alt="cart-svg"
+                className="h-6 w-6 text-white invert"
+              />
+              <div className="absolute top-0 right-0 translate-y-[-0.4rem] translate-x-[0.4rem] bg-[#ffc675] text-black text-xs pl-1.5 pr-1 pt-[2px] pb-[1.5px] font-semibold rounded-full">
+                {totalItems}
+              </div>
+            </div>
+          </button>
         </div>
-
-        <button
-          onClick={toggleMenu}
-          className="translate-x-[0.5rem] lg:hidden flex items-center justify-center"
-        >
-          <Hamburger toggled={menuIsOpen} size={22} />
-          <div
-            onClick={toogleCartHandler}
-            className="relative inline-flex items-center space-x-2 cursor-pointer"
-          >
-            <Image
-              src={cartimg}
-              alt="cart-svg"
-              className="h-6 w-6 text-white invert"
-            />
-            <div className="absolute top-0 right-0 translate-y-[-0.4rem] translate-x-[0.4rem] bg-[#ffc675] text-black text-xs pl-1.5 pr-1 pt-[2px] pb-[1.5px] font-semibold rounded-full">
-              {totalItems}
+        {
+          menuIsOpen && (
+            <div className='flex flex-col items-start justify-start w-full'>
+              <div
+                onClick={(e) => smoothScrollToSection(e, 'about')}
+                className="relative cursor-pointer group"
+              >
+                <p>About</p>
+                <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+              </div>
+              <div
+                onClick={(e) => smoothScrollToSection(e, 'products')}
+                className="relative cursor-pointer group"
+              >
+                <p>Bags</p>
+                <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+              </div>
+              <div
+                onClick={(e) => smoothScrollToSection(e, 'contact')}
+                className="relative cursor-pointer group"
+              >
+                <p> Contact Us</p>
+                <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+              </div>
             </div>
-          </div>
-        </button>
+          )
+        }
       </header>
       <Cart />
     </>
