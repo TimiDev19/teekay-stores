@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addToCart } from '@/store/audophileSlice';
 
 interface Bag {
-    id: string; // or number, depending on your ID type
+    id: number; // or number, depending on your ID type
     image: string;
     name: string;
     price: number; // or string, depending on how you handle prices
