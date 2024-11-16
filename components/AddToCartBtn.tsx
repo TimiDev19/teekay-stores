@@ -3,7 +3,19 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { addToCart } from '@/store/audophileSlice';
 
-const AddToCartBtn = ({ bag }) => {
+interface Bag {
+    id: string; // or number, depending on your ID type
+    image: string;
+    name: string;
+    price: number; // or string, depending on how you handle prices
+}
+
+// Define the props for the component
+interface AddToCartBtnProps {
+    bag: Bag | null; // bag can be of type Bag or null
+}
+
+const AddToCartBtn: React.FC<AddToCartBtnProps> = ({ bag }) => {
     const dispatch = useDispatch()
 
     const handleAddToCart = () => {
