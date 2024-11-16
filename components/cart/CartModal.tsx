@@ -208,14 +208,6 @@ const makePayment = async () => {
         <p className="font-semibold text-[1.1rem] tracking-wider">{`£ ${totalCost.toLocaleString()}`}</p>
       </div>
 
-      <input
-        type="email"
-        placeholder="Enter your email"
-        value={userEmail}
-        onChange={(e) => setUserEmail(e.target.value)}
-        required
-        className="border border-gray-300 p-2 rounded mb-2 focus:outline-black"
-      />
       {error && (
         <p style={{ color: 'red', marginBottom: '10px' }}>{error}</p>
       )}
