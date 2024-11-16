@@ -24,7 +24,7 @@ const CartModal = () => {
   }, 0);
   console.log(cart)
 
-  const apiURL = "http://localhost:3001/api"
+  const apiURL = "https://teekay-stores-backend.onrender.com/api"
 
   const sendCartContent = async () => {
     if (cart.length === 0) {
