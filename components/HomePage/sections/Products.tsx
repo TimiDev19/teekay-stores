@@ -8,9 +8,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import useMedia from '@/hooks/useMedia';
 
-import ProductCard from '@/components/helpers/ProductCard';
+import ProductCard from '@/helpers/ProductCard';
 
-import { products } from '@/components/helpers/helpers';
+import { products } from '@/helpers/helpers';
 import Link from 'next/link';
 
 const Products = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
-import products from '@/components/helpers/helpers';
-import ProductCard from '@/components/helpers/ProductCard';
+import products from '@/helpers/helpers';
+import ProductCard from '@/helpers/ProductCard';
 import { div } from 'framer-motion/client';
 // import { addToCart } from '@/store/audophileSlice';
 // import { useDispatch } from 'react-redux'

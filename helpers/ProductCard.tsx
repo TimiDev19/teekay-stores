@@ -63,12 +63,10 @@ const ProductCard = ({ width = '400px', imge, id, name, price }: any) => {
         className="relative"
       >
         <Link
-          // onClick={handleAddToCart}
           href={`/${id}`}
           className="absolute bottom-0 translate-y-20 transform bg-white w-full px-4 py-4 z-[2] flex justify-between group-hover:translate-y-0 duration-500 ease-in-out opacity-0 group-hover:opacity-100 cursor-pointer"
         >
           <p>View product</p>
-          {/* <ShoppingCartOutlined /> */}
           <RemoveRedEyeOutlinedIcon />
         </Link>
         <Image

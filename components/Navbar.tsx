@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Squeeze as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
-import { smoothScrollToSection } from './helpers/helpers';
+import { smoothScrollToSection } from '../helpers/helpers';
 import { useDispatch } from 'react-redux';
 import { useAppSelector } from '@/store/hooks/hooks';
 import {

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { smoothScrollToSection } from './helpers/helpers'
+import { smoothScrollToSection } from '../helpers/helpers'
 import { ArrowForward, ArrowForwardIos } from '@mui/icons-material'
 
 const Footer = () => {

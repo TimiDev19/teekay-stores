@@ -1,5 +1,5 @@
 import React from 'react';
-import gallery from '@/components/helpers/helpers';
+import gallery from '@/helpers/helpers';
 import Image from 'next/image';
 import Link from 'next/link';
 
