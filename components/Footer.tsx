@@ -6,7 +6,7 @@ import { ArrowForward, ArrowForwardIos } from '@mui/icons-material'
 const Footer = () => {
     return (
         <>
-            <div className=' mt-[50px] w-full h-[50vh] bg-[#fffaf6] flex flex-col md:flex-row items-center justify-center'>
+            <div className=' mt-[50px] w-full md:h-[50vh] bg-[#fffaf6] flex flex-col md:flex-row items-center justify-center'>
                 <div className=' w-full md:w-[48%] h-full flex-col flex items-start justify-end p-[10px] md:p-[50px] mb-[10px] md:mb-0'>
                     <h1
                         className=' text-4xl md:text-5xl'
@@ -98,8 +98,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className=' w-full h-[70px] text-center bg-black text-[#fffaf6] flex items-center justify-center'>
-                <h1 className=' flex'>
+            <div className=' w-full md:h-[70px] text-center bg-black text-[#fffaf6] flex items-center justify-center'>
+                <h1 className=' flex flex-col md:flex-row items-center justify-center'>
                     Copyright©2024 All rights reserved. Developed by
                     <Link
                         target='blank'
