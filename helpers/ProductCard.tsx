@@ -81,7 +81,7 @@ const ProductCard = ({ width = '400px', imge, id, name, price }: any) => {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            zIndex: 1,
+            zIndex: 5,
           }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -90,7 +90,7 @@ const ProductCard = ({ width = '400px', imge, id, name, price }: any) => {
       </div>
       <div className="flex justify-between font-medium">
         <p>{product?.name}</p>
-        <p>${product?.price}</p>
+        <p>£{product?.price}</p>
       </div>
     </div>
   );
