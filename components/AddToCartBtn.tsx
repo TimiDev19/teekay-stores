@@ -9,6 +9,7 @@ interface Bag {
     image: string | StaticImageData;
     name: string;
     price: number; // or string, depending on how you handle prices
+    availableColors?: Array<string>; // or string[]
 }
 
 // Define the props for the component

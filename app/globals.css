@@ -39,3 +39,15 @@
 .mx2xl {
   @apply 2xl:w-[1400px] 2xl:m-auto 2xl:px-0;
 }
+
+.background-red{
+  background-color: red;
+}
+
+.background-purple{
+  background-color: purple;
+}
+
+.background-violet{
+  background-color: violet;
+}

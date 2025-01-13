@@ -37,7 +37,7 @@ const About = () => {
             placeholder="blur"
             width={1000}
             height={1000}
-            className=" w-full lg:w-[400px] lg:h-[500px] originleft scale-0.9] object-cover z-[1] grayscale rotate45 -translat-x-[150px]"
+            className=" w-full lg:w-[400px] lg:h-[500px] originleft scale-0.9] object-cover z-[1] rotate45 -translat-x-[150px]"
             alt=""
           />
         </div>

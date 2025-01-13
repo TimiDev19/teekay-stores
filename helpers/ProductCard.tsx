@@ -24,6 +24,7 @@ const ProductCard = ({ width = '400px', imge, id, name, price }: any) => {
   const [isHovered, setIsHovered] = useState(false);
   const dispatch = useDispatch();
   const [product, setProduct] = useState<Product | null>(null);
+  
 
   useEffect(() => {
     if (id) {

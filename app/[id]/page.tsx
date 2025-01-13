@@ -1,8 +1,8 @@
-// "use client"
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import { addToCart } from '@/store/audophileSlice';
 import { getProductById } from '@/helpers/helpers';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { useDispatch } from 'react-redux';
 import AddToCartBtn from '@/components/AddToCartBtn';
 import Dropdown from '@/components/DropdownMenu';
@@ -14,8 +14,29 @@ interface PageParams {
     };
 }
 
-const page = async ({ params: { id } }: PageParams) => {
-    const bag = getProductById(Number(id))
+interface Bag {
+    id: number;
+    name: string;
+    price: number;
+    image: StaticImageData; // Assuming `StaticImageData` is imported from 'next/image'
+    color?: string // Optional property
+    availableColors?: Array<string>; // or string[]
+  }
+  
+
+const page = ({ params: { id } }: PageParams) => {
+    // const bag = getProductById(Number(id))
+    const [bag, setBag] = useState<Bag | null>(null);
+    const [bagColor, setBagColor] = useState("default")
+
+    useEffect(() => {
+        const fetchBag =async () => {
+            const data = await getProductById(Number(id))
+            setBag(data || null)
+        }
+
+        fetchBag();
+    }, [id])
 
     if (!bag) {
         return <div
@@ -40,9 +61,8 @@ const page = async ({ params: { id } }: PageParams) => {
                 <div className=' w-full lg:w-[45%] text-left'>
                     <h1 className=' font-semibold text-3xl mb-4'>{bag.name}</h1>
                     <h1 className=' text-green-700 font-semibold text-5xl mb-6'>£ {bag.price}</h1>
-                    <h1>Select a color</h1>
-                    <div className=' bg-transparent w-full flex items-center justify-start h-[60px]'>
-                        <Dropdown />
+                    <div className=' bg-transparent w-full flex items-center justify-start max-h-[60px]'>
+                        <Dropdown bagColor={bagColor} setBagColor={setBagColor} bag={bag}/>
                     </div>
                     <AddToCartBtn bag={bag} />
                 </div>

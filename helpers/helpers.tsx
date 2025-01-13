@@ -25,6 +25,7 @@ import img24 from '@/assets/newimg24.jpg';
 import img25 from '@/assets/newimg25.jpg';
 import img26 from '@/assets/newimg26.jpg';
 import img27 from '@/assets/newimg27.jpg';
+import img60 from '@/assets/img60.jpg'
 
 export const products = [
   {
@@ -38,6 +39,20 @@ export const products = [
     name: "Lavender Beaded Bag",
     price: 20.00,
     image: img2,
+    availableColors: [
+      {
+        color: "black",
+        link: "28"
+      },
+      {
+        color: "red",
+        link: "29"
+      },
+      {
+        color: "white",
+        link: "30"
+      },
+    ]
   },
   {
     id: 3,
@@ -56,6 +71,9 @@ export const products = [
     name: "Green Spiral Beaded Bag",
     price: 20.00,
     image: img5,
+    availableColors: [
+      "green", "black"
+    ]
   },
   {
     id: 6,
@@ -188,6 +206,66 @@ export const products = [
     name: "Larisa Cocktail Bag 27",
     price: 20.00,
     image: img27,
+  },
+  {
+    id: 28,
+    name: "Larisa Cocktail Bag 27",
+    price: 20.00,
+    image: img10,
+    availableColors: [
+      {
+        color: "violet",
+        link: "2"
+      },
+      {
+        color: "red",
+        link: "29"
+      },
+      {
+        color: "white",
+        link: "30"
+      },
+    ]
+  },
+  {
+    id: 29,
+    name: "Larisa Cocktail Bag 27",
+    price: 20.00,
+    image: img14,
+    availableColors: [
+      {
+        color: "violet",
+        link: "2"
+      },
+      {
+        color: "black",
+        link: "28"
+      },
+      {
+        color: "white",
+        link: "30"
+      },
+    ]
+  },
+  {
+    id: 30,
+    name: "Larisa Cocktail Bag 27",
+    price: 20.00,
+    image: img60,
+    availableColors: [
+      {
+        color: "violet",
+        link: "2"
+      },
+      {
+        color: "black",
+        link: "28"
+      },
+      {
+        color: "red",
+        link: "29"
+      },
+    ]
   },
 ];
 
