@@ -25,7 +25,94 @@ import img24 from '@/assets/newimg24.jpg';
 import img25 from '@/assets/newimg25.jpg';
 import img26 from '@/assets/newimg26.jpg';
 import img27 from '@/assets/newimg27.jpg';
-import img60 from '@/assets/img60.jpg'
+import img60 from '@/assets/img60.jpg';
+import img55 from '@/assets/img55.jpg';
+import img62 from '@/assets/img62.jpg'
+import img106 from '@/assets/img106.jpg';
+import img86 from '@/assets/img86.jpg';
+import img87 from '@/assets/img87.jpg';
+import img49 from '@/assets/img49.jpg';
+import img77 from '@/assets/img77.jpg';
+import img74 from '@/assets/img74.jpg';
+import img76 from '@/assets/img76.jpg';
+import img81 from '@/assets/img81.jpg';
+import img83 from "@/assets/img83.jpg";
+import img28 from "@/assets/img28.jpg"
+
+import img29 from "@/assets/img29.jpg"
+import img30 from "@/assets/img30.jpg"
+import img31 from "@/assets/img39.jpg"
+import img32 from "@/assets/img32.jpg"
+import img33 from "@/assets/img33.jpg"
+import img34 from "@/assets/img34.jpg"
+import img35 from "@/assets/img35.jpg"
+import img36 from "@/assets/img36.jpg"
+import img37 from "@/assets/img37.jpg"
+import img38 from "@/assets/img38.jpg"
+import img39 from "@/assets/img39.jpg"
+import img40 from "@/assets/img40.jpg"
+
+import img41 from "@/assets/img41.jpg"
+import img42 from "@/assets/img42.jpg"
+import img43 from "@/assets/img43.jpg"
+import img44 from "@/assets/img44.jpg"
+
+import img46 from "@/assets/img46.jpg"
+import img47 from "@/assets/img47.jpg"
+import img48 from "@/assets/img48.jpg"
+
+import img50 from "@/assets/img50.jpg"
+import img51 from "@/assets/img51.jpg"
+import img52 from "@/assets/img52.jpg"
+import img53 from "@/assets/img53.jpg"
+import img54 from "@/assets/img54.jpg"
+
+import img56 from "@/assets/img56.jpg"
+import img57 from "@/assets/img57.jpg"
+import img58 from "@/assets/img58.jpg"
+import img59 from "@/assets/img59.jpg"
+
+import img61 from "@/assets/img61.jpg"
+
+import img63 from "@/assets/img63.jpg"
+import img64 from "@/assets/img64.jpg"
+import img65 from "@/assets/img65.jpg"
+import img66 from "@/assets/img66.jpg"
+import img67 from "@/assets/img67.jpg"
+import img68 from "@/assets/img68.jpg"
+import img69 from "@/assets/img69.jpg"
+import img70 from "@/assets/img70.jpg"
+import img71 from "@/assets/img71.jpg"
+import img72 from "@/assets/img72.jpg"
+import img73 from "@/assets/img73.jpg"
+
+import img75 from "@/assets/img75.jpg"
+
+import img78 from "@/assets/img78.jpg"
+import img79 from "@/assets/img79.jpg"
+import img80 from "@/assets/img80.jpg"
+
+import img82 from "@/assets/img82.jpg"
+
+import img84 from "@/assets/img84.jpg"
+import img85 from "@/assets/img85.jpg"
+
+import img88 from "@/assets/img88.jpg" 
+import img89 from "@/assets/img89.jpg"
+import img90 from "@/assets/img90.jpg"
+import img91 from "@/assets/img91.jpg"
+import img92 from "@/assets/img92.jpg"
+import img93 from "@/assets/img93.jpg"
+
+import img96 from "@/assets/img96.jpg"
+import img97 from "@/assets/img97.jpg"
+import img98 from "@/assets/img98.jpg"
+
+import img103 from "@/assets/img103.jpg"
+
+import img100 from "@/assets/img100.jpg"
+import img101 from "@/assets/img101.jpg"
+
 
 export const products = [
   {
@@ -65,6 +152,24 @@ export const products = [
     name: "Baby Pink Beaded Bag",
     price: 20.00,
     image: img4,
+    availableColors: [
+      {
+        color: "pink",
+        link: "4"
+      },
+      {
+        color: "green",
+        link: "24"
+      },
+      {
+        color: "silver",
+        link: "33"
+      },
+      {
+        color: "purple",
+        link: "34"
+      },
+    ]
   },
   {
     id: 5,
@@ -72,7 +177,22 @@ export const products = [
     price: 20.00,
     image: img5,
     availableColors: [
-      "green", "black"
+      {
+        color: "green",
+        link: "5"
+      },
+      {
+        color: "black",
+        link: "35"
+      },
+      {
+        color: "red",
+        link: "41"
+      },
+      {
+        color: "blue",
+        link: "36"
+      },
     ]
   },
   {
@@ -98,6 +218,24 @@ export const products = [
     name: "Gold Heart Bag",
     price: 20.00,
     image: img9,
+    availableColors: [
+      {
+        color: "green",
+        link: "22"
+      },
+      {
+        color: "gold",
+        link: "9"
+      },
+      {
+        color: "red",
+        link: "32"
+      },
+      {
+        color: "white",
+        link: "31"
+      },
+    ]
   },
   // {
   //   id: 10,
@@ -123,18 +261,12 @@ export const products = [
     price: 20.00,
     image: img13,
   },
-  // {
-  //   id: 14,
-  //   name: "Larisa Cocktail Bag 14",
-  //   price: 20.00,
-  //   image: img14,
-  // },
-  // {
-  //   id: 15,
-  //   name: "Larisa Cocktail Bag 15",
-  //   price: 20.00,
-  //   image: img15,
-  // },
+  {
+    id: 15,
+    name: "Larisa Cocktail Bag 15",
+    price: 20.00,
+    image: img15,
+  },
   {
     id: 16,
     name: "Larisa Cocktail Bag 16",
@@ -176,6 +308,24 @@ export const products = [
     name: "Larisa Cocktail Bag 22",
     price: 20.00,
     image: img22,
+    availableColors: [
+      {
+        color: "green",
+        link: "22"
+      },
+      {
+        color: "gold",
+        link: "9"
+      },
+      {
+        color: "red",
+        link: "32"
+      },
+      {
+        color: "white",
+        link: "31"
+      },
+    ]
   },
   {
     id: 23,
@@ -188,6 +338,24 @@ export const products = [
     name: "Larisa Cocktail Bag 24",
     price: 20.00,
     image: img24,
+    availableColors: [
+      {
+        color: "pink",
+        link: "4"
+      },
+      {
+        color: "green",
+        link: "24"
+      },
+      {
+        color: "silver",
+        link: "33"
+      },
+      {
+        color: "purple",
+        link: "34"
+      },
+    ]
   },
   {
     id: 25,
@@ -264,6 +432,650 @@ export const products = [
       {
         color: "red",
         link: "29"
+      },
+    ]
+  },
+  {
+    id: 31,
+    name: "Larisa Cocktail Bag 27",
+    price: 20.00,
+    image: img55,
+    availableColors: [
+      {
+        color: "green",
+        link: "22"
+      },
+      {
+        color: "gold",
+        link: "9"
+      },
+      {
+        color: "red",
+        link: "32"
+      },
+      {
+        color: "white",
+        link: "31"
+      },
+    ]
+  },
+  {
+    id: 32,
+    name: "Larisa Cocktail Bag 27",
+    price: 20.00,
+    image: img106,
+    availableColors: [
+      {
+        color: "green",
+        link: "22"
+      },
+      {
+        color: "gold",
+        link: "9"
+      },
+      {
+        color: "red",
+        link: "32"
+      },
+      {
+        color: "white",
+        link: "31"
+      },
+    ]
+  },
+  {
+    id: 33,
+    name: "Larisa Cocktail Bag 27",
+    price: 20.00,
+    image: img86,
+    availableColors: [
+      {
+        color: "pink",
+        link: "4"
+      },
+      {
+        color: "green",
+        link: "24"
+      },
+      {
+        color: "silver",
+        link: "33"
+      },
+      {
+        color: "purple",
+        link: "34"
+      },
+    ]
+  },
+  {
+    id: 34,
+    name: "Larisa Cocktail Bag 27",
+    price: 20.00,
+    image: img87,
+    availableColors: [
+      {
+        color: "pink",
+        link: "4"
+      },
+      {
+        color: "green",
+        link: "24"
+      },
+      {
+        color: "silver",
+        link: "33"
+      },
+      {
+        color: "purple",
+        link: "34"
+      },
+    ]
+  },
+  {
+    id: 35,
+    name: "Green Spiral Beaded Bag",
+    price: 20.00,
+    image: img49,
+    availableColors: [
+      {
+        color: "green",
+        link: "5"
+      },
+      {
+        color: "black",
+        link: "35"
+      },
+      {
+        color: "red",
+        link: "41"
+      },
+      {
+        color: "blue",
+        link: "36"
+      },
+    ]
+  },
+  {
+    id: 36,
+    name: "Green Spiral Beaded Bag",
+    price: 20.00,
+    image: img77,
+    availableColors: [
+      {
+        color: "green",
+        link: "5"
+      },
+      {
+        color: "black",
+        link: "35"
+      },
+      {
+        color: "red",
+        link: "41"
+      },
+      {
+        color: "blue",
+        link: "36"
+      },
+    ]
+  },
+  {
+    id: 37,
+    name: "Green Spiral Beaded Bag",
+    price: 20.00,
+    image: img74,
+    availableColors: [
+      {
+        color: "orange",
+        link: "37"
+      },
+      {
+        color: "red",
+        link: "38"
+      },
+      {
+        color: "violet",
+        link: "39"
+      },
+      {
+        color: "brown",
+        link: "40"
+      },
+    ]
+  },
+  {
+    id: 38,
+    name: "Green Spiral Beaded Bag",
+    price: 20.00,
+    image: img76,
+    availableColors: [
+      {
+        color: "orange",
+        link: "37"
+      },
+      {
+        color: "red",
+        link: "38"
+      },
+      {
+        color: "violet",
+        link: "39"
+      },
+      {
+        color: "brown",
+        link: "40"
+      },
+    ]
+  },
+  {
+    id: 39,
+    name: "Green Spiral Beaded Bag",
+    price: 20.00,
+    image: img81,
+    availableColors: [
+      {
+        color: "orange",
+        link: "37"
+      },
+      {
+        color: "red",
+        link: "38"
+      },
+      {
+        color: "violet",
+        link: "39"
+      },
+      {
+        color: "brown",
+        link: "40"
+      },
+    ]
+  },
+  {
+    id: 40,
+    name: "Green Spiral Beaded Bag",
+    price: 20.00,
+    image: img83,
+    availableColors: [
+      {
+        color: "orange",
+        link: "37"
+      },
+      {
+        color: "red",
+        link: "38"
+      },
+      {
+        color: "violet",
+        link: "39"
+      },
+      {
+        color: "brown",
+        link: "40"
+      },
+    ]
+  },
+  {
+    id: 41,
+    name: "Green Spiral Beaded Bag",
+    price: 20.00,
+    image: img62,
+    availableColors: [
+      {
+        color: "green",
+        link: "5"
+      },
+      {
+        color: "black",
+        link: "35"
+      },
+      {
+        color: "red",
+        link: "41"
+      },
+      {
+        color: "blue",
+        link: "36"
+      },
+    ]
+  },
+  {
+    id: 42,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img28,
+  },
+  {
+    id: 43,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img29,
+  },
+  {
+    id: 44,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img30,
+  },
+  {
+    id: 45,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img31,
+  },
+  {
+    id: 46,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img32,
+  },
+  {
+    id: 47,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img33,
+  },
+  {
+    id: 48,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img34,
+  },
+  {
+    id: 49,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img35,
+  },
+  {
+    id: 50,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img36,
+  },
+  {
+    id: 51,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img37,
+  },
+  {
+    id: 52,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img38,
+  },
+  {
+    id: 53,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img39,
+  },
+  {
+    id: 101,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img103,
+    availableColors: [
+      {
+        color: "black",
+        link: "100"
+      },
+      {
+        color: "green",
+        link: "101"
+      },
+    ]
+  },
+  {
+    id: 54,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img40,
+  },
+  {
+    id: 55,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img41,
+  },
+  {
+    id: 56,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img42,
+  },
+  {
+    id: 57,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img43,
+  },
+  {
+    id: 58,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img44,
+  },
+  {
+    id: 59,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img46,
+  },
+  {
+    id: 60,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img47,
+  },
+  {
+    id: 61,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img48,
+  },
+  {
+    id: 62,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img50,
+  },
+  {
+    id: 63,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img51,
+  },
+  {
+    id: 64,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img52,
+  },
+  {
+    id: 65,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img53,
+  },
+  {
+    id: 66,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img54,
+  },
+  {
+    id: 67,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img56,
+  },
+  {
+    id: 68,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img57,
+  },
+  {
+    id: 69,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img58,
+  },
+  {
+    id: 70,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img59,
+  },
+  {
+    id: 71,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img61,
+  },
+  {
+    id: 72,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img73,
+  },
+  {
+    id: 73,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img72,
+  },
+  {
+    id: 74,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img63,
+  },
+  {
+    id: 75,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img64,
+  },
+  {
+    id: 76,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img65,
+  },
+  {
+    id: 77,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img66,
+  },
+  {
+    id: 78,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img67,
+  },
+  {
+    id: 79,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img68,
+  },
+  // {
+  //   id: 80,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img69,
+  // },
+  {
+    id: 81,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img70,
+  },
+  {
+    id: 82,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img71,
+  },
+  {
+    id: 83,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img75,
+  },
+  {
+    id: 84,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img78,
+  },
+  {
+    id: 85,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img79,
+  },
+  {
+    id: 86,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img80,
+  },
+  {
+    id: 87,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img82,
+  },
+  {
+    id: 88,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img84,
+  },
+  {
+    id: 89,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img85,
+  },
+  {
+    id: 90,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img91,
+  },
+  {
+    id: 91,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img88,
+  },
+  {
+    id: 92,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img89,
+  },
+  {
+    id: 93,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img90,
+  },
+  {
+    id: 94,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img92,
+  },
+  {
+    id: 95,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img93,
+  },
+  {
+    id: 96,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img96,
+  },
+  {
+    id: 97,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img97,
+  },
+  {
+    id: 98,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img98,
+  },
+  {
+    id: 99,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img100,
+  },
+  {
+    id: 100,
+    name: "Larisa Cocktail Bag 23",
+    price: 20.00,
+    image: img101,
+    availableColors: [
+      {
+        color: "black",
+        link: "100"
+      },
+      {
+        color: "green",
+        link: "101"
       },
     ]
   },
