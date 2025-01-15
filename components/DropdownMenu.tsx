@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import { div, select } from 'framer-motion/client';
 import { StaticImageData } from 'next/image';
 import Link from 'next/link';
@@ -18,44 +18,46 @@ interface DropdownProps {
   bag: Bag | null; // bag can be of type Bag or null
 }
 
-
-
 const availableColors = [
   {
-    color: "red"
+    color: 'red',
   },
   {
-    color: "green"
-  }
-]
+    color: 'green',
+  },
+];
 
 const Dropdown: React.FC<DropdownProps> = ({ setBagColor, bagColor, bag }) => {
+  const listedColors = bag?.availableColors;
 
-  const listedColors = bag?.availableColors
-
-  console.log(`listed colors are ${listedColors}`)
+  console.log(`listed colors are ${listedColors}`);
 
   if (!listedColors) {
-    return (
-      <div></div>
-    )
+    return <div></div>;
   } else {
     return (
-      <div className=''>
+      <div className="">
         <div className=" w-full h-full flex items-center justify-start">
-          <div className=' flex items-center justify-center w-full px-2 py-1 rounded-3xl focus:outline-none border-black capitalize'>
+          <div className=" flex items-center justify-center w-full px-2 py-1 rounded-3xl focus:outline-none border-black capitalize">
             {/* <option value="null">Select a color</option> */}
-            {
-              listedColors?.map((colorScheme, index) => (
-                <Link
-                  href={`/${colorScheme.link}`}
-                  // onClick={() => setBagColor(`${colorScheme}`)}
-                  className={` mr-5 h-[50px] w-[50px] rounded-sm ${colorScheme.color !== "black" ? `background-${colorScheme.color}` : `bg-${colorScheme.color}`} border-2 border-black`}
-                >
-                </Link>
-                // <option value="">{colorScheme}</option>
-              ))
-            }
+            {listedColors?.map((colorScheme, index) => (
+              <Link
+                //@ts-ignore
+                href={`/${colorScheme.link}`}
+                // onClick={() => setBagColor(`${colorScheme}`)}
+                className={` mr-5 h-[50px] w-[50px] rounded-sm ${
+                  // @ts-ignore
+                  colorScheme.color !== 'black'
+                    ? // @ts-ignore
+
+                      `background-${colorScheme.color}`
+                    : // @ts-ignore
+
+                      `bg-${colorScheme.color}`
+                } border-2 border-black`}
+              ></Link>
+              // <option value="">{colorScheme}</option>
+            ))}
           </div>
           {/* <button
           onClick={() => setBagColor("blue")}
