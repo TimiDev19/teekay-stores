@@ -73,7 +73,7 @@ const NavBar = () => {
       <header
         className={`fixed top-0 w-full z-40 flex flex-col justify-between items-center text-white pxpx text-[13px] duration-300 bg-black/50 backdrop-blur-lg webkit-header-blur py-3`}
       >
-        <div className=' w-full flex items-center justify-between'>
+        <div className=" w-full flex items-center justify-between">
           <Link href={'/'}>
             <div className="text-3xl tracking-widest tangerine invert-0">
               TEEKAY
@@ -81,27 +81,30 @@ const NavBar = () => {
           </Link>
 
           <div className="lg:flex items-center gap-8 tracking-[0.15rem] hidden uppercase font-bold">
-            <div
+            <Link
+              href={'/'}
               onClick={(e) => smoothScrollToSection(e, 'about')}
               className="relative cursor-pointer group"
             >
               <p>About</p>
               <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
-            </div>
-            <div
+            </Link>
+            <Link
+              href={'/'}
               onClick={(e) => smoothScrollToSection(e, 'products')}
               className="relative cursor-pointer group"
             >
               <p>Bags</p>
               <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
-            </div>
-            <div
+            </Link>
+            <Link
+              href={'/'}
               onClick={(e) => smoothScrollToSection(e, 'contact')}
               className="relative cursor-pointer group"
             >
               <p> Contact Us</p>
               <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
-            </div>
+            </Link>
 
             <div
               onClick={toogleCartHandler}
@@ -138,33 +141,34 @@ const NavBar = () => {
             </div>
           </button>
         </div>
-        {
-          menuIsOpen && (
-            <div className='flex flex-col items-start justify-start w-full'>
-              <div
-                onClick={(e) => smoothScrollToSection(e, 'about')}
-                className="relative cursor-pointer group"
-              >
-                <p>About</p>
-                <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
-              </div>
-              <div
-                onClick={(e) => smoothScrollToSection(e, 'products')}
-                className="relative cursor-pointer group"
-              >
-                <p>Bags</p>
-                <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
-              </div>
-              <div
-                onClick={(e) => smoothScrollToSection(e, 'contact')}
-                className="relative cursor-pointer group"
-              >
-                <p> Contact Us</p>
-                <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
-              </div>
-            </div>
-          )
-        }
+        {menuIsOpen && (
+          <div className="flex flex-col items-start justify-start w-full">
+            <Link
+              href={'/'}
+              onClick={(e) => smoothScrollToSection(e, 'about')}
+              className="relative cursor-pointer group"
+            >
+              <p>About</p>
+              <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+            </Link>
+            <Link
+              href={'/'}
+              onClick={(e) => smoothScrollToSection(e, 'products')}
+              className="relative cursor-pointer group"
+            >
+              <p>Bags</p>
+              <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+            </Link>
+            <Link
+              href={'/'}
+              onClick={(e) => smoothScrollToSection(e, 'contact')}
+              className="relative cursor-pointer group"
+            >
+              <p> Contact Us</p>
+              <div className="absolute bottom-0 h-px w-full bg-white scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
+            </Link>
+          </div>
+        )}
       </header>
       <Cart />
     </>
