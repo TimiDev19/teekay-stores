@@ -80,7 +80,7 @@ import img65 from "@/assets/img65.jpg"
 import img66 from "@/assets/img66.jpg"
 import img67 from "@/assets/img67.jpg"
 import img68 from "@/assets/img68.jpg"
-import img69 from "@/assets/img69.jpg"
+
 import img70 from "@/assets/img70.jpg"
 import img71 from "@/assets/img71.jpg"
 import img72 from "@/assets/img72.jpg"
@@ -117,14 +117,14 @@ import img101 from "@/assets/img101.jpg"
 export const products = [
   {
     id: 1,
-    name: "Black Beaded Bag",
+    name: "Black Cube Beaded Bag",
     price: 20.00,
     image: image1,
   },
   {
     id: 2,
-    name: "Lavender Beaded Bag",
-    price: 20.00,
+    name: "Lavender Crystal Beaded Bag",
+    price: 50.00,
     image: img2,
     availableColors: [
       {
@@ -143,14 +143,14 @@ export const products = [
   },
   {
     id: 3,
-    name: "Green Beaded Bag",
-    price: 20.00,
+    name: "Green Cube Beaded Bag",
+    price: 37.99,
     image: img3,
   },
   {
     id: 4,
     name: "Baby Pink Beaded Bag",
-    price: 20.00,
+    price: 25.00,
     image: img4,
     availableColors: [
       {
@@ -174,7 +174,7 @@ export const products = [
   {
     id: 5,
     name: "Green Spiral Beaded Bag",
-    price: 20.00,
+    price: 37.99,
     image: img5,
     availableColors: [
       {
@@ -197,8 +197,8 @@ export const products = [
   },
   {
     id: 6,
-    name: "Larisa Cocktail Bag 6",
-    price: 20.00,
+    name: "Horsetailed Beaded Bag",
+    price: 35.00,
     image: img6,
   },
   {
@@ -209,14 +209,14 @@ export const products = [
   },
   {
     id: 8,
-    name: "Baby Blue Bag",
-    price: 20.00,
+    name: "Baby Blue Ball Beaded Bag",
+    price: 35.00,
     image: img8,
   },
   {
     id: 9,
-    name: "Gold Heart Bag",
-    price: 20.00,
+    name: "Gold Heart Crystal Beaded Bag",
+    price: 40.00,
     image: img9,
     availableColors: [
       {
@@ -252,61 +252,61 @@ export const products = [
   {
     id: 12,
     name: "Yellow Beaded Bag",
-    price: 20.00,
+    price: 45.00,
     image: img12,
   },
   {
     id: 13,
     name: "White and Gold Beaded Bag",
-    price: 20.00,
+    price: 30.00,
     image: img13,
   },
   {
     id: 15,
-    name: "Larisa Cocktail Bag 15",
+    name: "White Ball Beaded Bag",
     price: 20.00,
     image: img15,
   },
   {
     id: 16,
-    name: "Larisa Cocktail Bag 16",
-    price: 20.00,
+    name: "Burgundy Crytal Beaded Bag",
+    price: 30.00,
     image: img16,
   },
   {
     id: 17,
-    name: "Larisa Cocktail Bag 17",
-    price: 20.00,
+    name: "White Cube Beaded Bag",
+    price: 65.00,
     image: img17,
   },
   {
     id: 18,
-    name: "Larisa Cocktail Bag 18",
-    price: 20.00,
+    name: "Brown Cylinder Ball Beaded Bag",
+    price: 30.00,
     image: img18,
   },
   {
     id: 19,
-    name: "Larisa Cocktail Bag 19",
-    price: 20.00,
+    name: "Red Crystal Beaded Bag",
+    price: 35.00,
     image: img19,
   },
   {
     id: 20,
-    name: "Larisa Cocktail Bag 20",
+    name: "Black Cube Beaded Bag",
     price: 20.00,
     image: img20,
   },
   {
     id: 21,
-    name: "Larisa Cocktail Bag 21",
-    price: 20.00,
+    name: "Purple Crystal Beaded Bag",
+    price: 35.00,
     image: img21,
   },
   {
     id: 22,
-    name: "Larisa Cocktail Bag 22",
-    price: 20.00,
+    name: "Green Heart Crystal Beaded Bag",
+    price: 40.00,
     image: img22,
     availableColors: [
       {
@@ -329,14 +329,14 @@ export const products = [
   },
   {
     id: 23,
-    name: "Larisa Cocktail Bag 23",
+    name: "Burgundy Basket Beaded Bag",
     price: 20.00,
     image: img23,
   },
   {
     id: 24,
-    name: "Larisa Cocktail Bag 24",
-    price: 20.00,
+    name: "Green Cube Beaded Heart bag",
+    price: 25.00,
     image: img24,
     availableColors: [
       {
@@ -359,26 +359,26 @@ export const products = [
   },
   {
     id: 25,
-    name: "Larisa Cocktail Bag 25",
+    name: "Blue Cube Beaded Bag",
     price: 20.00,
     image: img25,
   },
   {
     id: 26,
-    name: "Larisa Cocktail Bag 26",
-    price: 20.00,
+    name: "Pink Cube Beaded Bag",
+    price: 35.00,
     image: img26,
   },
   {
     id: 27,
-    name: "Larisa Cocktail Bag 27",
-    price: 20.00,
+    name: "Blue Crystal Beaded Bag",
+    price: 30.00,
     image: img27,
   },
   {
     id: 28,
-    name: "Larisa Cocktail Bag 27",
-    price: 20.00,
+    name: "Black Ball Beaded Bag",
+    price: 50.00,
     image: img10,
     availableColors: [
       {
@@ -397,8 +397,8 @@ export const products = [
   },
   {
     id: 29,
-    name: "Larisa Cocktail Bag 27",
-    price: 20.00,
+    name: "Red crystal beaded bag",
+    price: 50.00,
     image: img14,
     availableColors: [
       {
@@ -417,8 +417,8 @@ export const products = [
   },
   {
     id: 30,
-    name: "Larisa Cocktail Bag 27",
-    price: 20.00,
+    name: "White Ball Beaded Bag",
+    price: 50.00,
     image: img60,
     availableColors: [
       {
@@ -437,8 +437,8 @@ export const products = [
   },
   {
     id: 31,
-    name: "Larisa Cocktail Bag 27",
-    price: 20.00,
+    name: "White Crystal Heart Bag",
+    price: 40.00,
     image: img55,
     availableColors: [
       {
@@ -461,8 +461,8 @@ export const products = [
   },
   {
     id: 32,
-    name: "Larisa Cocktail Bag 27",
-    price: 20.00,
+    name: "Red Crystal Heart Bag",
+    price: 40.00,
     image: img106,
     availableColors: [
       {
@@ -485,8 +485,8 @@ export const products = [
   },
   {
     id: 33,
-    name: "Larisa Cocktail Bag 27",
-    price: 20.00,
+    name: "Silver Ball Beaded Heart Bag",
+    price: 25.00,
     image: img86,
     availableColors: [
       {
@@ -509,8 +509,8 @@ export const products = [
   },
   {
     id: 34,
-    name: "Larisa Cocktail Bag 27",
-    price: 20.00,
+    name: "Purple Crystal Heart Bag",
+    price: 25.00,
     image: img87,
     availableColors: [
       {
@@ -533,8 +533,8 @@ export const products = [
   },
   {
     id: 35,
-    name: "Green Spiral Beaded Bag",
-    price: 20.00,
+    name: "Black Spiral Beaded Bag",
+    price: 37.99,
     image: img49,
     availableColors: [
       {
@@ -557,8 +557,8 @@ export const products = [
   },
   {
     id: 36,
-    name: "Green Spiral Beaded Bag",
-    price: 20.00,
+    name: "White and Blue Spiral Beaded Bag",
+    price: 37.99,
     image: img77,
     availableColors: [
       {
@@ -581,7 +581,7 @@ export const products = [
   },
   {
     id: 37,
-    name: "Green Spiral Beaded Bag",
+    name: "Orange Ball Beaded Bag",
     price: 20.00,
     image: img74,
     availableColors: [
@@ -605,7 +605,7 @@ export const products = [
   },
   {
     id: 38,
-    name: "Green Spiral Beaded Bag",
+    name: "Red Ball Beaded Bag",
     price: 20.00,
     image: img76,
     availableColors: [
@@ -629,7 +629,7 @@ export const products = [
   },
   {
     id: 39,
-    name: "Green Spiral Beaded Bag",
+    name: "Violet Ball Beaded Bag",
     price: 20.00,
     image: img81,
     availableColors: [
@@ -653,7 +653,7 @@ export const products = [
   },
   {
     id: 40,
-    name: "Green Spiral Beaded Bag",
+    name: "Brown Ball Beaded Bag",
     price: 20.00,
     image: img83,
     availableColors: [
@@ -677,8 +677,8 @@ export const products = [
   },
   {
     id: 41,
-    name: "Green Spiral Beaded Bag",
-    price: 20.00,
+    name: "Red Spiral Beaded Bag",
+    price: 37.99,
     image: img62,
     availableColors: [
       {
@@ -701,79 +701,79 @@ export const products = [
   },
   {
     id: 42,
-    name: "Larisa Cocktail Bag 23",
+    name: "Black Cube Beaded Bag",
     price: 20.00,
     image: img28,
   },
   {
     id: 43,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Crystal Beaded Bag",
     price: 20.00,
     image: img29,
   },
   {
     id: 44,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Crystal Beaded Bag",
     price: 20.00,
     image: img30,
   },
   {
     id: 45,
-    name: "Larisa Cocktail Bag 23",
+    name: "Gold Crystal Beaded Bag",
     price: 20.00,
     image: img31,
   },
   {
     id: 46,
-    name: "Larisa Cocktail Bag 23",
+    name: "Silver Ball Beaded Bag",
     price: 20.00,
     image: img32,
   },
   {
     id: 47,
-    name: "Larisa Cocktail Bag 23",
+    name: "White and Black Ball Beaded Bag",
     price: 20.00,
     image: img33,
   },
-  {
-    id: 48,
-    name: "Larisa Cocktail Bag 23",
-    price: 20.00,
-    image: img34,
-  },
+  // {
+  //   id: 48,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img34,
+  // },
   {
     id: 49,
-    name: "Larisa Cocktail Bag 23",
+    name: "Red Ball Cocktail Bag",
     price: 20.00,
     image: img35,
   },
   {
     id: 50,
-    name: "Larisa Cocktail Bag 23",
+    name: "Silver Ball Beaded Bag",
     price: 20.00,
     image: img36,
   },
   {
     id: 51,
-    name: "Larisa Cocktail Bag 23",
+    name: "Multicoloured Cocktail Bag",
     price: 20.00,
     image: img37,
   },
   {
     id: 52,
-    name: "Larisa Cocktail Bag 23",
+    name: "Black Cube Beaed Bag",
     price: 20.00,
     image: img38,
   },
-  {
-    id: 53,
-    name: "Larisa Cocktail Bag 23",
-    price: 20.00,
-    image: img39,
-  },
+  // {
+  //   id: 53,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img39,
+  // },
   {
     id: 101,
-    name: "Larisa Cocktail Bag 23",
+    name: "Green Basket Beaded Bag",
     price: 20.00,
     image: img103,
     availableColors: [
@@ -789,157 +789,157 @@ export const products = [
   },
   {
     id: 54,
-    name: "Larisa Cocktail Bag 23",
+    name: "Gold Crystal Beaded Bag",
     price: 20.00,
     image: img40,
   },
   {
     id: 55,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Cocktail Bag",
     price: 20.00,
     image: img41,
   },
   {
     id: 56,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Purse",
     price: 20.00,
     image: img42,
   },
   {
     id: 57,
-    name: "Larisa Cocktail Bag 23",
+    name: "Purple Ball Beaded bag",
     price: 20.00,
     image: img43,
   },
   {
     id: 58,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Sector Bag",
     price: 20.00,
     image: img44,
   },
   {
     id: 59,
-    name: "Larisa Cocktail Bag 23",
+    name: "Cream Mixed beaded Bags",
     price: 20.00,
     image: img46,
   },
   {
     id: 60,
-    name: "Larisa Cocktail Bag 23",
+    name: "Black and White Pearl bag",
     price: 20.00,
     image: img47,
   },
-  {
-    id: 61,
-    name: "Larisa Cocktail Bag 23",
-    price: 20.00,
-    image: img48,
-  },
+  // {
+  //   id: 61,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img48,
+  // },
   {
     id: 62,
-    name: "Larisa Cocktail Bag 23",
+    name: "Pink Crystal Beaded Bag",
     price: 20.00,
     image: img50,
   },
   {
     id: 63,
-    name: "Larisa Cocktail Bag 23",
+    name: "Green Crystal Beaded Bag",
     price: 20.00,
     image: img51,
   },
   {
     id: 64,
-    name: "Larisa Cocktail Bag 23",
+    name: "White and Yellow Cube Beaded Bag",
     price: 20.00,
     image: img52,
   },
   {
     id: 65,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Ball Beaded Heart Bag",
     price: 20.00,
     image: img53,
   },
   {
     id: 66,
-    name: "Larisa Cocktail Bag 23",
+    name: "Purple Crystal Beaded Bag",
     price: 20.00,
     image: img54,
   },
   {
     id: 67,
-    name: "Larisa Cocktail Bag 23",
+    name: "Black Ball Beaded bag",
     price: 20.00,
     image: img56,
   },
-  {
-    id: 68,
-    name: "Larisa Cocktail Bag 23",
-    price: 20.00,
-    image: img57,
-  },
+  // {
+  //   id: 68,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img57,
+  // },
   {
     id: 69,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Cube Beaded Bag",
     price: 20.00,
     image: img58,
   },
   {
     id: 70,
-    name: "Larisa Cocktail Bag 23",
+    name: "Green Crystal Beaded Bag",
     price: 20.00,
     image: img59,
   },
   {
     id: 71,
-    name: "Larisa Cocktail Bag 23",
+    name: "Green Cube Beaded Bag",
     price: 20.00,
     image: img61,
   },
   {
     id: 72,
-    name: "Larisa Cocktail Bag 23",
+    name: "Pink Ball Beaded Bag",
     price: 20.00,
     image: img73,
   },
   {
     id: 73,
-    name: "Larisa Cocktail Bag 23",
+    name: "Black Basket Beaded Bag",
     price: 20.00,
     image: img72,
   },
   {
     id: 74,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Crystal Beaded bag",
     price: 20.00,
     image: img63,
   },
   {
     id: 75,
-    name: "Larisa Cocktail Bag 23",
+    name: "Black Cube Beaded Bag",
     price: 20.00,
     image: img64,
   },
   {
     id: 76,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Cube Beaded bag",
     price: 20.00,
     image: img65,
   },
   {
     id: 77,
-    name: "Larisa Cocktail Bag 23",
+    name: "Burgundy Cube Spiral Beaded Bag",
     price: 20.00,
     image: img66,
   },
   {
     id: 78,
-    name: "Larisa Cocktail Bag 23",
+    name: "Green Crystal Beaded bag",
     price: 20.00,
     image: img67,
   },
   {
     id: 79,
-    name: "Larisa Cocktail Bag 23",
+    name: "Gold Crystal Beaded bag",
     price: 20.00,
     image: img68,
   },
@@ -951,134 +951,134 @@ export const products = [
   // },
   {
     id: 81,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Ball Beaded Bag",
     price: 20.00,
     image: img70,
   },
   {
     id: 82,
-    name: "Larisa Cocktail Bag 23",
+    name: "Gold Ball Beaded Bag",
     price: 20.00,
     image: img71,
   },
   {
     id: 83,
-    name: "Larisa Cocktail Bag 23",
+    name: "Black Yam Flower Bag",
     price: 20.00,
     image: img75,
   },
   {
     id: 84,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Ball Beaded Bag",
     price: 20.00,
     image: img78,
   },
   {
     id: 85,
-    name: "Larisa Cocktail Bag 23",
+    name: "Purple Ball Braded Bag ",
     price: 20.00,
     image: img79,
   },
   {
     id: 86,
-    name: "Larisa Cocktail Bag 23",
+    name: "Blue Cube Beaded Bag",
     price: 20.00,
     image: img80,
   },
-  {
-    id: 87,
-    name: "Larisa Cocktail Bag 23",
-    price: 20.00,
-    image: img82,
-  },
+  // {
+  //   id: 87,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img82,
+  // },
   {
     id: 88,
-    name: "Larisa Cocktail Bag 23",
+    name: "Burgundy Cube Beaded bag",
     price: 20.00,
     image: img84,
   },
-  {
-    id: 89,
-    name: "Larisa Cocktail Bag 23",
-    price: 20.00,
-    image: img85,
-  },
-  {
-    id: 90,
-    name: "Larisa Cocktail Bag 23",
-    price: 20.00,
-    image: img91,
-  },
-  {
-    id: 91,
-    name: "Larisa Cocktail Bag 23",
-    price: 20.00,
-    image: img88,
-  },
+  // {
+  //   id: 89,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img85,
+  // },
+  // {
+  //   id: 90,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img91,
+  // },
+  // {
+  //   id: 91,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img88,
+  // },
   {
     id: 92,
-    name: "Larisa Cocktail Bag 23",
+    name: "Amber Crystal Beaded bag",
     price: 20.00,
     image: img89,
   },
   {
     id: 93,
-    name: "Larisa Cocktail Bag 23",
+    name: "Purple Crystal Beaded Bag",
     price: 20.00,
     image: img90,
   },
-  {
-    id: 94,
-    name: "Larisa Cocktail Bag 23",
-    price: 20.00,
-    image: img92,
-  },
+  // {
+  //   id: 94,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img92,
+  // },
   {
     id: 95,
-    name: "Larisa Cocktail Bag 23",
+    name: "Pink Basket Beaded Bag",
     price: 20.00,
     image: img93,
   },
   {
     id: 96,
-    name: "Larisa Cocktail Bag 23",
+    name: "Silver Ball Beaded bag",
     price: 20.00,
     image: img96,
   },
   {
     id: 97,
-    name: "Larisa Cocktail Bag 23",
+    name: "White Cocktail Bag",
     price: 20.00,
     image: img97,
   },
   {
     id: 98,
-    name: "Larisa Cocktail Bag 23",
+    name: "Pink Mini Bag",
     price: 20.00,
     image: img98,
   },
   {
     id: 99,
-    name: "Larisa Cocktail Bag 23",
+    name: "Purple Crystal Beaded Bag",
     price: 20.00,
     image: img100,
   },
-  {
-    id: 100,
-    name: "Larisa Cocktail Bag 23",
-    price: 20.00,
-    image: img101,
-    availableColors: [
-      {
-        color: "black",
-        link: "100"
-      },
-      {
-        color: "green",
-        link: "101"
-      },
-    ]
-  },
+  // {
+  //   id: 100,
+  //   name: "Larisa Cocktail Bag 23",
+  //   price: 20.00,
+  //   image: img101,
+  //   availableColors: [
+  //     {
+  //       color: "black",
+  //       link: "100"
+  //     },
+  //     {
+  //       color: "green",
+  //       link: "101"
+  //     },
+  //   ]
+  // },
 ];
 
 export default products;
@@ -1106,3 +1106,4 @@ export function smoothScrollToSection(
     }
   }
 }
+
