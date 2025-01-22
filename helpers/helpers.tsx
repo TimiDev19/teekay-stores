@@ -246,7 +246,7 @@ export const products = [
   {
     id: 11,
     name: "White Cylinder Bag",
-    price: 20.00,
+    price: 30.00,
     image: img11,
   },
   {
@@ -264,13 +264,13 @@ export const products = [
   {
     id: 15,
     name: "White Ball Beaded Bag",
-    price: 20.00,
+    price: 55.99,
     image: img15,
   },
   {
     id: 16,
     name: "Burgundy Crytal Beaded Bag",
-    price: 30.00,
+    price: 40.00,
     image: img16,
   },
   {
@@ -702,13 +702,13 @@ export const products = [
   {
     id: 42,
     name: "Black Cube Beaded Bag",
-    price: 20.00,
+    price: 40.00,
     image: img28,
   },
   {
     id: 43,
     name: "White Crystal Beaded Bag",
-    price: 20.00,
+    price: 65.00,
     image: img29,
   },
   {
@@ -720,19 +720,19 @@ export const products = [
   {
     id: 45,
     name: "Gold Crystal Beaded Bag",
-    price: 20.00,
+    price: 60.00,
     image: img31,
   },
   {
     id: 46,
     name: "Silver Ball Beaded Bag",
-    price: 20.00,
+    price: 45.00,
     image: img32,
   },
   {
     id: 47,
     name: "White and Black Ball Beaded Bag",
-    price: 20.00,
+    price: 40.00,
     image: img33,
   },
   // {
@@ -744,25 +744,25 @@ export const products = [
   {
     id: 49,
     name: "Red Ball Cocktail Bag",
-    price: 20.00,
+    price: 45.00,
     image: img35,
   },
   {
     id: 50,
     name: "Silver Ball Beaded Bag",
-    price: 20.00,
+    price: 45.00,
     image: img36,
   },
   {
     id: 51,
     name: "Multicoloured Cocktail Bag",
-    price: 20.00,
+    price: 40.00,
     image: img37,
   },
   {
     id: 52,
     name: "Black Cube Beaed Bag",
-    price: 20.00,
+    price: 35.00,
     image: img38,
   },
   // {
@@ -774,7 +774,7 @@ export const products = [
   {
     id: 101,
     name: "Green Basket Beaded Bag",
-    price: 20.00,
+    price: 29.00,
     image: img103,
     availableColors: [
       {
@@ -790,7 +790,7 @@ export const products = [
   {
     id: 54,
     name: "Gold Crystal Beaded Bag",
-    price: 20.00,
+    price: 35.00,
     image: img40,
   },
   {
