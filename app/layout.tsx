@@ -56,7 +56,7 @@ export default function RootLayout({
       <meta property="og:title" content="Teekay Stores | The Essence Of Elegance" />
       <meta property="og:description" content="Discover a world where femininity meets elegance, crafted in every stitch, every silhouette. Our bags blend timeless glamour with modern allure, designed to be the perfect companion for every moment." />
       <meta property="og:image" content="/favicon.ico" />
-      <link rel="icon" href="/favicon.ico" className=' rounded-full'/>
+      <link rel="icon" href="/favicon.ico"/>
       <meta property="og:url" content="https://teekaybags.store/" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#fffaf6] overflow-x-clip scroll-smooth`}
@@ -64,6 +64,7 @@ export default function RootLayout({
         <main
           className={`${slab.className} ${tangerine.variable} ${slab.variable}`}
         >
+          <link rel="shortcut icon" href="/favicon.ico"/>
           <Provider store={store}>
             <Navbar />
             <ToastContainer

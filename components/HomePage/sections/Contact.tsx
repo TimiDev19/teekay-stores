@@ -11,7 +11,7 @@ const Contact = () => {
         <div className=" w-[90%] m-auto lg:w-[80%] flex items-center justify-center">
           <form
             action=""
-            className=" w-[80%] m-auto h-[50%] lg:h-[90%] text-orange-500"
+            className=" w-full lg:w-[80%] m-auto h-[50%] lg:h-[90%] text-orange-500"
           >
             <div className=" flex flex-col lg:flex-row items-center justify-between mt-6">
               <input
