@@ -98,7 +98,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className=' w-full md:h-[70px] text-center bg-black text-[#fffaf6] flex items-center justify-center'>
+            {/* <div className=' w-full md:h-[70px] text-center bg-black text-[#fffaf6] flex items-center justify-center'>
                 <h1 className=' flex flex-col md:flex-row items-center justify-center'>
                     Copyright©2024 All rights reserved. Developed by
                     <Link
@@ -119,7 +119,7 @@ const Footer = () => {
                         <div className="absolute bottom-0 h-px w-full bg-[#fffaf6] scale-x-0 group-hover:scale-x-100 duration-300 origin-left"></div>
                     </Link>
                 </h1>
-            </div>
+            </div> */}
         </>
     )
 }

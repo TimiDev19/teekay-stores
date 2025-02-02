@@ -79,7 +79,7 @@ export default function RootLayout({
               pauseOnHover
             />
             {children}
-            {/* <Footer /> */}
+            <Footer />
           </Provider>
         </main>
       </body>
